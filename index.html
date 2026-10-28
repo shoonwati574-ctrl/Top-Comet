@@ -1,0 +1,793 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1e38">
+  <meta name="description" content="Top Comet Oversea Employment Agency — practical guidance for overseas employment candidates in Yangon.">
+
+  <title>Top Comet Oversea Employment Agency</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    :root {
+      --font-heading: "Playfair Display", Georgia, serif;
+      --font-body: "Plus Jakarta Sans", Arial, sans-serif;
+      --navy: #0b1e38;
+      --gold: #b89763;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    h1, h2,
+    .about-heading h2,
+    .profile-head h2,
+    .contact-details h2,
+    #gallery-title {
+      font-family: var(--font-heading);
+      font-weight: 500;
+      letter-spacing: -0.7px;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: clamp(42px, 5vw, 66px);
+    }
+
+    h2 {
+      font-size: clamp(34px, 3.5vw, 48px);
+    }
+
+    h1 span,
+    h2 em {
+      font-family: var(--font-heading);
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    h3 {
+      font-family: var(--font-body);
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    p, li, address, input, textarea, button, a {
+      font-family: var(--font-body);
+    }
+
+    /* Header and navigation */
+    .brand-copy strong {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+
+    .brand-copy small {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .primary-nav button,
+    .header-call {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* Small labels */
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .section-kicker {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+
+    /* Home */
+    .hero-intro {
+      max-width: 570px;
+      font-size: 17px;
+      line-height: 1.9;
+    }
+
+    .hero-services {
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .button {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero-photo-credit {
+      font-size: 12px;
+    }
+
+    /* About Us */
+    .lead {
+      font-size: 16px;
+      line-height: 1.95;
+    }
+
+    .text-link {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .about-note p {
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .value-number {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .values-row h3 {
+      font-size: 19px;
+    }
+
+    .values-row p {
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    /* Company Profile */
+    .profile-lead {
+      font-size: 15px;
+      line-height: 1.95;
+    }
+
+    .card-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+
+    .profile-card h3 {
+      font-size: 19px;
+      line-height: 1.6;
+    }
+
+    .service-list {
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    .status-pending {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .status-card p {
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .process-list {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .process-card small {
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    /* Gallery */
+    .gallery-heading > p {
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .gallery-item figcaption span {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .gallery-item figcaption strong {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    /* Contact */
+    .contact-lead {
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .contact-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+
+    .contact-block address {
+      font-size: 15px;
+      font-style: normal;
+      line-height: 1.9;
+    }
+
+    .contact-phone {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .awaiting-inline {
+      font-size: 13px;
+    }
+
+    .social-links a {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* Contact form */
+    .form-header strong {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .form-header small {
+      font-size: 13px;
+    }
+
+    .form-notice {
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .form-panel label {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .form-panel input,
+    .form-panel textarea {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    .form-panel input::placeholder,
+    .form-panel textarea::placeholder {
+      font-size: 14px;
+    }
+
+    .form-result {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    .site-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 20px;
+      font-family: var(--font-body);
+      font-size: 12px;
+    }
+
+    .footer-brand {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .footer-brand span {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.7px;
+    }
+
+    .footer-page {
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .developer-credit {
+      flex: 0 0 100%;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 8px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(138, 148, 163, 0.25);
+      text-align: center;
+      font-family: var(--font-body);
+      font-size: 12px;
+      line-height: 1.8;
+      color: #8a94a3;
+      letter-spacing: 0.3px;
+    }
+
+    .developer-credit strong {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .developer-credit .credit-date {
+      margin-left: 4px;
+      color: #8a94a3;
+    }
+
+    /* Accessibility */
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 4px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: clamp(36px, 8vw, 48px);
+      }
+
+      h2 {
+        font-size: clamp(30px, 6vw, 38px);
+      }
+
+      .hero-intro {
+        font-size: 15px;
+      }
+
+      .lead,
+      .profile-lead,
+      .contact-lead {
+        font-size: 14px;
+      }
+
+      .values-row p,
+      .service-list,
+      .status-card p,
+      .process-list {
+        font-size: 13px;
+      }
+
+      .gallery-heading > p {
+        font-size: 13px;
+      }
+
+      .primary-nav button {
+        font-size: 12px;
+      }
+
+      .form-panel input,
+      .form-panel textarea {
+        font-size: 16px;
+      }
+
+      .developer-credit {
+        font-size: 11px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app-shell">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Top Comet home">
+        <span class="brand-symbol" aria-hidden="true"><span></span></span>
+        <span class="brand-copy">
+          <strong>TOP COMET</strong>
+          <small>OVERSEA EMPLOYMENT AGENCY</small>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Main navigation">
+        <button type="button" data-view="home" aria-current="page">Home</button>
+        <button type="button" data-view="about">About Us</button>
+        <button type="button" data-view="profile">Company Profile</button>
+        <button type="button" data-view="gallery">Gallery</button>
+        <button type="button" data-view="contact">Contact Us</button>
+      </nav>
+
+      <a class="header-call" href="tel:09959359423">
+        <span class="phone-dot" aria-hidden="true"></span>
+        Call our office
+      </a>
+    </header>
+
+    <main id="main-content">
+
+      <!-- HOME -->
+      <section class="view home-view is-active" id="home" aria-labelledby="home-title">
+        <div class="hero-photo" role="img" aria-label="Candidates speaking with an employment counsellor in a bright professional office"></div>
+        <div class="hero-shade"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow light">
+            <span class="eyebrow-line"></span>
+            A trusted guide for your next step
+          </p>
+
+          <h1 id="home-title">
+            Your ambition.<br>
+            <span>A world of possibility.</span>
+          </h1>
+
+          <p class="hero-intro">
+            Thoughtful guidance for candidates preparing to pursue employment
+            opportunities overseas.
+          </p>
+
+          <div class="hero-actions">
+            <button class="button button-white" type="button" data-go="about">
+              Discover Top Comet <span aria-hidden="true">&rarr;</span>
+            </button>
+            <button class="button button-quiet" type="button" data-go="contact">
+              Talk with our team
+            </button>
+          </div>
+
+          <div class="hero-services" aria-label="Service highlights">
+            <span>Candidate screening</span>
+            <span>Skills preparation</span>
+            <span>Document guidance</span>
+          </div>
+        </div>
+
+        <div class="hero-index"><span>01</span><i></i><span>05</span></div>
+        <div class="hero-photo-credit">Illustrative photography</div>
+      </section>
+
+      <!-- ABOUT US -->
+      <section class="view interior-view about-view" id="about" aria-labelledby="about-title" hidden>
+        <div class="section-kicker">
+          <span>01 / ABOUT US</span>
+          <span class="kicker-rule"></span>
+          <span>YANGON, MYANMAR</span>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-heading">
+            <p class="eyebrow">A considered start to a new chapter</p>
+
+            <h2 id="about-title">
+              Opportunity deserves<br>
+              <em>the right preparation.</em>
+            </h2>
+
+            <p class="lead">
+              Top Comet Oversea Employment Agency supports candidates as they
+              explore overseas employment opportunities, prepare their skills,
+              and navigate the steps involved in recruitment.
+            </p>
+
+            <button class="text-link" type="button" data-go="profile">
+              Explore our company profile <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+
+          <div class="about-side">
+            <div class="about-photo" role="img" aria-label="Professional agency office and candidate consultation"></div>
+
+            <div class="about-note">
+              <span class="note-mark" aria-hidden="true">TC</span>
+              <p>
+                Clear information. Respectful support. A focus on the person
+                behind every application.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="values-row">
+          <article>
+            <span class="value-number">01</span>
+            <h3>Our mission</h3>
+            <p>
+              Help candidates approach overseas employment with clear guidance,
+              practical preparation, and respect at every step.
+            </p>
+          </article>
+
+          <article>
+            <span class="value-number">02</span>
+            <h3>Our vision</h3>
+            <p>
+              Be a dependable Yangon-based guide for people preparing to build
+              their careers beyond Myanmar.
+            </p>
+          </article>
+
+          <article>
+            <span class="value-number">03</span>
+            <h3>Our values</h3>
+            <p>
+              Integrity, transparency, care, and a commitment to responsible
+              candidate support.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- COMPANY PROFILE -->
+      <section class="view interior-view profile-view" id="profile" aria-labelledby="profile-title" hidden>
+        <div class="section-kicker">
+          <span>02 / COMPANY PROFILE</span>
+          <span class="kicker-rule"></span>
+          <span>AGENCY OVERVIEW</span>
+        </div>
+
+        <div class="profile-head">
+          <div>
+            <p class="eyebrow">Who we are and how we help</p>
+            <h2 id="profile-title">
+              A clear route from<br>
+              <em>interest to readiness.</em>
+            </h2>
+          </div>
+
+          <p class="profile-lead">
+            Top Comet Oversea Employment Agency is based in Ahlone Township,
+            Yangon. The agency supports candidates exploring overseas employment
+            through candidate screening, preparation, and recruitment-document
+            guidance.
+          </p>
+        </div>
+
+        <div class="profile-grid">
+          <article class="profile-card profile-service">
+            <span class="card-label">OUR SERVICES</span>
+            <h3>Candidate support, thoughtfully delivered.</h3>
+            <ul class="service-list">
+              <li>Overseas employment guidance and candidate screening</li>
+              <li>Skills and interview preparation support</li>
+              <li>Assistance understanding official recruitment documents</li>
+              <li>Candidate communication through recruitment stages</li>
+            </ul>
+          </article>
+
+          <article class="profile-card status-card">
+            <span class="card-label">LICENSING STATUS</span>
+            <div class="status-pending">
+              <span class="status-dot"></span>
+              Awaiting agency confirmation
+            </div>
+            <p>
+              Official licensing details have not been supplied for this website.
+              Please contact the agency to confirm current licensing status.
+            </p>
+          </article>
+
+          <article class="profile-card status-card">
+            <span class="card-label">TARGET DESTINATIONS</span>
+            <div class="status-pending">
+              <span class="status-dot"></span>
+              Awaiting agency confirmation
+            </div>
+            <p>
+              Destination countries are not listed until confirmed by the agency.
+              Ask the team about current opportunities.
+            </p>
+          </article>
+
+          <article class="profile-card process-card">
+            <span class="card-label">TYPICAL RECRUITMENT STEPS</span>
+            <ol class="process-list">
+              <li><b>01</b><span>Enquiry and initial conversation</span></li>
+              <li><b>02</b><span>Candidate screening and eligibility review</span></li>
+              <li><b>03</b><span>Preparation, training, and employer matching</span></li>
+              <li><b>04</b><span>Document guidance and next-step coordination</span></li>
+            </ol>
+            <small>
+              General overview; confirm the agency's current process directly.
+            </small>
+          </article>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="view interior-view gallery-view" id="gallery" aria-labelledby="gallery-title" hidden>
+        <div class="section-kicker">
+          <span>03 / GALLERY</span>
+          <span class="kicker-rule"></span>
+          <span>PEOPLE &amp; PROGRESS</span>
+        </div>
+
+        <div class="gallery-heading">
+          <div>
+            <p class="eyebrow">A glimpse of the journey</p>
+            <h2 id="gallery-title">Preparation meets possibility.</h2>
+          </div>
+          <p>
+            Illustrative gallery images for this design. Replace with
+            agency-approved photographs before public use.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-training">
+            <div class="gallery-image" role="img" aria-label="Candidates taking part in practical skills and interview training"></div>
+            <figcaption>
+              <span>01 / PREPARATION</span>
+              <strong>Candidate training</strong>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item gallery-departure">
+            <div class="gallery-image" role="img" aria-label="Workers and family sharing a departure moment at an airport"></div>
+            <figcaption>
+              <span>02 / NEW BEGINNINGS</span>
+              <strong>Departure moments</strong>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item gallery-office">
+            <div class="gallery-image" role="img" aria-label="Bright, welcoming employment agency office"></div>
+            <figcaption>
+              <span>03 / OUR SPACE</span>
+              <strong>Office facilities</strong>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item gallery-placement">
+            <div class="gallery-image" role="img" aria-label="Candidate celebrating an overseas job placement with an employment counsellor"></div>
+            <figcaption>
+              <span>04 / MILESTONES</span>
+              <strong>Successful placements</strong>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- CONTACT US -->
+      <section class="view interior-view contact-view" id="contact" aria-labelledby="contact-title" hidden>
+        <div class="section-kicker">
+          <span>04 / CONTACT US</span>
+          <span class="kicker-rule"></span>
+          <span>WE'RE HERE TO HELP</span>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-details">
+            <p class="eyebrow">Start a conversation</p>
+
+            <h2 id="contact-title">
+              Let's talk about<br>
+              <em>your next step.</em>
+            </h2>
+
+            <p class="contact-lead">
+              Contact the team for information about the agency and current
+              opportunities.
+            </p>
+
+            <div class="contact-block">
+              <span class="contact-label">VISIT OUR OFFICE</span>
+              <address>24, Nwe Ni St., Ahlone Township,<br>Yangon</address>
+            </div>
+
+            <div class="contact-block">
+              <span class="contact-label">CALL US</span>
+              <a class="contact-phone" href="tel:09959359423">09959359423</a>
+            </div>
+
+            <div class="contact-block">
+              <span class="contact-label">EMAIL</span>
+              <span class="awaiting-inline">Awaiting agency confirmation</span>
+            </div>
+
+            <div class="social-links">
+              <a href="https://www.facebook.com/share/19Qhs62VVG/" target="_blank" rel="noopener noreferrer">
+                Facebook <span aria-hidden="true">&nearr;</span>
+              </a>
+              <a href="https://www.tiktok.com/@hotc26?_r=1&amp;_t=ZS-9AmgKfdoAo4" target="_blank" rel="noopener noreferrer">
+                TikTok <span aria-hidden="true">&nearr;</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="form-panel">
+            <div class="form-header">
+              <span class="form-icon" aria-hidden="true">TC</span>
+              <div>
+                <strong>Send an enquiry</strong>
+                <small>We'd be glad to hear from you.</small>
+              </div>
+            </div>
+
+            <p class="form-notice">
+              <strong>Form status:</strong> Your message can be prepared here,
+              but this static site is not connected to an agency inbox. Please
+              call until an official email is supplied.
+            </p>
+
+            <form id="contact-form" novalidate>
+              <div class="field-row">
+                <label>
+                  Your name
+                  <input name="name" autocomplete="name" required minlength="2" placeholder="e.g. Alex Smith">
+                </label>
+
+                <label>
+                  Email address
+                  <input name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+                </label>
+              </div>
+
+              <label>
+                What would you like to ask?
+                <textarea name="message" required minlength="10" rows="3" placeholder="Write your message..."></textarea>
+              </label>
+
+              <button class="button button-navy form-submit" type="submit">
+                Review enquiry <span aria-hidden="true">&rarr;</span>
+              </button>
+
+              <p class="form-result" id="form-result" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <a class="footer-brand" href="#home">
+        TOP COMET <span>OVERSEA EMPLOYMENT AGENCY</span>
+      </a>
+
+      <span>24, Nwe Ni St., Ahlone Township, Yangon</span>
+
+      <span class="footer-page" id="page-indicator">HOME / 05</span>
+
+      <div class="developer-credit">
+        Developed by <strong>Shoon Wati Hlaing</strong>
+        <span class="credit-date">(28.10.2026)</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
